@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>启方发布助手 · 隐私政策</title>
+<style>
+  body{max-width:720px;margin:40px auto;padding:0 20px;font:16px/1.7 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;color:#1f2330;background:#fff}
+  h1{font-size:24px}h2{font-size:18px;margin-top:32px}
+  p,li{margin:8px 0}code{background:#f3f4f6;padding:1px 5px;border-radius:4px}
+  .meta{color:#6b7280;font-size:14px}
+</style>
+</head>
+<body>
+<h1>启方发布助手（Chrome 扩展）隐私政策</h1>
+<p class="meta">生效日期：2026-09-03</p>
+
+<p>「启方发布助手」是启方工作台的配套 Chrome 扩展。它只做一件事：把你在启方工作台里已经准备好的小红书笔记（标题、正文、话题标签、配图）填进小红书创作者中心的发布页，并停在发布按钮前。最终是否发布，由你本人点击。</p>
+
+<h2>一、扩展不收集、不上传任何数据</h2>
+<ul>
+  <li>扩展<strong>没有自己的服务器</strong>，也不会向启方或任何第三方服务器发送任何请求。</li>
+  <li>扩展<strong>不读取、不存储</strong>你的小红书账号密码、Cookie 或登录凭证。</li>
+  <li>扩展<strong>不保存</strong>任何笔记内容：内容仅在这次填写过程中存在于内存里，填写完成或关闭页面后即消失。</li>
+  <li>扩展<strong>不使用</strong>任何统计、埋点或崩溃上报服务。</li>
+</ul>
+
+<h2>二、扩展会处理哪些信息，来自哪里</h2>
+<ul>
+  <li><strong>笔记内容</strong>（标题、正文、话题标签、配图链接）：来自你自己在启方工作台页面上点击「发布到小红书」时，页面通过 Chrome 的扩展消息通道一次性传给扩展；扩展只把它们填进创作页。</li>
+  <li><strong>配图文件</strong>：扩展按页面传来的图片链接（启方的对象存储、带时效签名）下载图片，再交给创作页的上传控件。图片不会被发送到其它任何地方。</li>
+  <li><strong>小红书账号昵称与 ID</strong>：仅用于在填写前核对当前登录的创作者账号是不是你选定的那个，避免发错号。核对结果只回传给发起操作的启方页面，不做其它用途。</li>
+</ul>
+
+<h2>三、扩展申请的权限及用途</h2>
+<ul>
+  <li><code>scripting</code> / <code>tabs</code>：在小红书创作者中心的发布页打开一个标签页，并把填写逻辑注入该页面。</li>
+  <li>访问 <code>creator.xiaohongshu.com</code>：填写笔记内容的唯一目标站点。</li>
+  <li>访问 <code>keyfocushub-user-media.oss-cn-hangzhou.aliyuncs.com</code>：下载你自己上传到启方的配图。</li>
+  <li>只接受来自启方工作台域名（<code>*.keysocial.cn</code> / <code>*.keyfocus.cn</code>）的消息，其它任何网页都无法驱动本扩展。</li>
+</ul>
+
+<h2>四、不做的事</h2>
+<ul>
+  <li>不会替你点击「发布」，不会定时或自动发布。</li>
+  <li>不会在小红书之外的任何网站注入代码。</li>
+  <li>不会修改你的浏览器设置、搜索引擎或新标签页。</li>
+</ul>
+
+<h2>五、政策变更与联系方式</h2>
+<p>本政策如有变更，会在本页面更新并同步更新扩展版本说明。如有疑问，请通过启方工作台内的支持渠道联系我们。</p>
+</body>
+</html>
